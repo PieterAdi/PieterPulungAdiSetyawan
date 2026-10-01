@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latihan Web02</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 20px;
+      background: #fff;
+    }
+
+    /* Bingkai luar dengan scrollbar, seperti pada gambar */
+    .frame {
+      width: 480px;
+      height: 310px;
+      overflow: scroll;
+      border: 3px solid;
+      border-color: #808080 #dfdfdf #dfdfdf #808080;
+      background: #fff;
+    }
+
+    form {
+      padding: 14px 12px;
+      width: 500px; /* sedikit lebih lebar agar scrollbar horizontal muncul */
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0 4px;
+    }
+
+    td {
+      font-size: 16px;
+      vertical-align: middle;
+      padding: 0 4px 0 0;
+    }
+
+    /* Input teks */
+    input[type="text"],
+    input[type="email"] {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      border: 2px inset #999;
+      padding: 1px 3px;
+      background: #fff;
+    }
+
+    #name     { width: 300px; }
+    #email    { width: 350px; }
+    #postcode { width: 180px; }
+
+    /* Textarea alamat */
+    textarea {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 13px;
+      width: 260px;
+      height: 100px;
+      border: 2px inset #999;
+      padding: 2px 3px;
+      resize: none;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="frame">
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" value="you name here"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" value="your email here"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea id="address" name="address">25 Nowhere Street
+Somewhere
+Not Here
+Y2K 5RU</textarea></td>
+        </tr>
+        <tr>
+          <td><label for="postcode">Postcode:</label></td>
+          <td><input type="text" id="postcode" name="postcode" value="postal code"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>
